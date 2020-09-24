@@ -1,9 +1,9 @@
-# LAB-3-4-IETI
+# LAB-5
 <p align="center">
   <a href="https://material-ui.com/" rel="noopener" target="_blank"><img width="150" src="https://material-ui.com/static/logo.svg" alt="Material-UI logo"></a></p>
 </p>
 
-<h1 align="center">1.3 React Material</h1>
+<h1 align="center">1.5 React Material</h1>
 
 [![npm](https://img.shields.io/badge/npm-v6.13.4-red.svg)](https://www.npmjs.com/)
 [![npx](https://img.shields.io/badge/dependencies-npx-orange)](https://www.npmjs.com/package/npx)
@@ -25,73 +25,80 @@ React project using Material-UI library.
   
 ## Deploys  
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://lab3ieti.herokuapp.com/)
+[FireBase Wep App](https://taks-planner-app-159c7.web.app)
 
-[![Azure](https://aka.ms/deploytoazurebutton)](https://ietilabv3.z21.web.core.windows.net/)
+## Iconos de la App (Manifest.json)
 
-## Available Scripts
+Desde el buscador se pueden ver los iconos del maniefest.json de la aplicacion
 
-In the project directory, you can run:
+![img1](https://github.com/fernando-b15/LAB5-IETI/blob/master/img/logo.PNG)
 
-### `npm start`
+## Despliegue de App en Firebase
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Despues de crear el proyecto y loguearnos localmente en la consola comenzamos con el despliegue con el comando firebase init y configuramos el hosting de la app
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+![img2](https://github.com/fernando-b15/LAB5-IETI/blob/master/img/firebase1.PNG)
 
-### `npm test`
+Fijamos el directorio build como directorio raiz del proyecto
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![img3](https://github.com/fernando-b15/LAB5-IETI/blob/master/img/firebase2.PNG)
 
-### `npm run build`
+Por ultimo realizamos el deploy de la App con el comando firebase deploy 
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![img4](https://github.com/fernando-b15/LAB5-IETI/blob/master/img/firebase3.PNG)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Estado Service Worker
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Podemos tambien ver el estado del Service Worker de la App desde el buscador y podemos ver que  Service Worker de la App se encuentra activado
 
-### `npm run eject`
+![img12](https://github.com/fernando-b15/LAB5-IETI/blob/master/img/estado.PNG)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Pruebas
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Prueba desde computador en buscador
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Podemos acceder desde el buscador web mediante el link de la app y vemos que despliega de forma exitosa
 
-## Learn More
+![img5](https://github.com/fernando-b15/LAB5-IETI/blob/master/img/test1.PNG)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Prueba desde computador tras haber Intalado la App
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Tras acceder en mediante el buscador a la app podemos Instalarla en el computador  y el icono de la app quedara guardado en el escritorio 
 
-### Code Splitting
+![img6](https://github.com/fernando-b15/LAB5-IETI/blob/master/img/test2.PNG)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+Accedemos a la App dando click en el icono y podemos acceder a la App y realizar una insercion de una nueva tarea
 
-### Analyzing the Bundle Size
+![img7](https://github.com/fernando-b15/LAB5-IETI/blob/master/img/test3.PNG)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+### Prueba desde celular tras haber Instalado la App
 
-### Making a Progressive Web App
+Podemos al acceder a la app mediante el link y vemos que nos da la opcion de Instalar la App
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+![img8](https://github.com/fernando-b15/LAB5-IETI/blob/master/img/cel1.jpg)
 
-### Advanced Configuration
+Confirmamos la instalacion de la App
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+![img9](https://github.com/fernando-b15/LAB5-IETI/blob/master/img/cel2.jpg)
 
-### Deployment
+Podemos ver que el icono de la App ya aparece en la pantalla del celular
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+![img10](https://github.com/fernando-b15/LAB5-IETI/blob/master/img/cel3.jpg)
 
-### `npm run build` fails to minify
+Mediante el icono de la App podemos accder a la App desde el celular e insertamos tres nuevas tareas
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+![img11](https://github.com/fernando-b15/LAB5-IETI/blob/master/img/cel4%20(2).jpg)
+
+## Comando BuildDeploy
+
+Una vez agregado el script al package.json de la app procedemos a probarlo y vemos que ejecuta el build de la aplicacion y despues realiza el deploy en Firebase de la App
+
+![img13](https://github.com/fernando-b15/LAB5-IETI/blob/master/img/builddeploy.PNG)
+
+![img14](https://github.com/fernando-b15/LAB5-IETI/blob/master/img/builddeploy2.PNG)
+
+
+
+
+
